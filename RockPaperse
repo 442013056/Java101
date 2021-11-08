@@ -1,0 +1,40 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class RockPaperse {
+    public static void main(String[] args) {
+     Scanner scan = new Scanner(System.in);
+        String computerPlays = "rps";
+        Random rnd = new Random();
+        do{
+            System.out.println("If you want to play enter:\n(r or R) for rock,\n(p or P) for paper,\n(s or S) for scissors\nor Enter any key to exit");
+             String var = scan.nextLine();
+             var = var.toLowerCase();
+            char play = var.charAt(0);
+            if(play != 'r' && play != 'p' && play != 's'){
+                break;
+           } 
+          char computerChoice = computerPlays.charAt(rnd.nextInt(computerPlays.length()));
+		  if(play == 'r' && computerChoice == 'r'){
+		         System.out.println("tie!!");}	         
+		  else if(play == 'p' && computerChoice == 'p'){
+		         System.out.println("tie!!");}		         
+		  else if(play == 's' && computerChoice == 's'){
+		         System.out.println("tie!!");}		         
+		  else if(play == 'r' && computerChoice == 's'){
+		     System.out.println("computer wins!!");}	         
+		  else if(play == 'r' && computerChoice == 'p'){
+		     System.out.println("you win!!");}         
+		  else if(play == 'p' && computerChoice == 'r'){
+		     System.out.println("you win!!");}		         
+		  else if(play == 'p' && computerChoice == 's'){
+		     System.out.println("computer wins!!");}		         
+		  else if(play == 's' && computerChoice == 'r'){
+		     System.out.println("computer wins!!");}		         
+		  else if(play == 's' && computerChoice == 'p'){
+		     System.out.println("you win!!");}
+
+             System.out.println((play)+"you win_computer"+(computerChoice));
+       }while(true);
+    }
+}
