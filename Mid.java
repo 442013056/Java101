@@ -8,7 +8,7 @@ public class Mid
 	    float var1 = scan.nextFloat();
 		var1 = var1 / 10 * 100;
 		
-		if(var1 > 100 && var1 < 0){
+		if(var1 > 100 || var1 < 0){
 		    System.out.print("Error,please try again and anter a number bwtween 0 and 10");}
 		    
 		 else if(var1 < 50){

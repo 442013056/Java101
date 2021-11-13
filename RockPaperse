@@ -1,6 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
-
+//your grade is 4.5/5
+//change file name to be  RockPaperse.java
 public class RockPaperse {
     public static void main(String[] args) {
      Scanner scan = new Scanner(System.in);
